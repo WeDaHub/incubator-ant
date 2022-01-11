@@ -1,0 +1,24 @@
+/* miniprogram/pages/detail/detail.wxss */
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 80%;
+}
+.p-footer {
+  display: flex;
+  justify-content: center;
+  color: #ccc;
+  margin: 40rpx auto;
+}
+.p-success {
+  color: #67C23A;
+}
+.p-danger {
+  color: #F56C6C;
+}
+.p-warning {
+  color: #E6A23C;
+}

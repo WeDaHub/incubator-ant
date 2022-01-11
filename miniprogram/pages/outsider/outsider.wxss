@@ -1,0 +1,12 @@
+/* miniprogram/pages/outsider/outsider.wxss */
+.p-tips {
+  width: 80%;
+  height: 200rpx;
+  background-color: #fff;
+  text-align: center;
+  margin: 50rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+}

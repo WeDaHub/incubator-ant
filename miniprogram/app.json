@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/done/done",
+    "pages/detail/feedback",
+    "pages/outsider/outsider",
+    "pages/404/404"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "PaaS蚂蚁引擎",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "selectedColor": "#0052d9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/icon_home.png",
+        "selectedIconPath": "./images/icon_home_hl.png"
+      },
+      {
+        "pagePath": "pages/done/done",
+        "text": "历史",
+        "iconPath": "./images/icon_history.png",
+        "selectedIconPath": "./images/icon_history_hl.png"
+      }
+    ]
+  }
+}

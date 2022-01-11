@@ -1,0 +1,10 @@
+<!--miniprogram/pages/detail/feedback.wxml-->
+<mp-msg type="success" title="操作成功">
+  <view slot="desc">已审核，请关注</view>
+  <view slot="handle">
+    <button class="weui-btn" type="primary" bindtap="goHome">确定</button>
+  </view>
+  <view slot="footer">
+    <view class="weui-footer__text">Copyright © 2019-2021 PaaS</view>
+  </view>
+</mp-msg>

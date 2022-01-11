@@ -1,0 +1,36 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view>
+  <mp-loading type="circle" show="{{!ready}}"></mp-loading>
+</view>
+<view wx:if="{{ready}}">
+  <mp-cells wx:if="{{process.status === 0}}" title="当前步骤">
+    <mp-cell value="步骤名称" footer="{{process.steps[process.cur_step-1].name}}"></mp-cell>
+    <mp-cell value="处理人" footer="{{process.steps[process.cur_step-1].handlers}}"></mp-cell>
+  </mp-cells>
+  <mp-cells title="基础信息">
+    <mp-cell value="应用名" footer="{{process.app}}"></mp-cell>
+    <mp-cell value="标题" footer="{{process.title}}"></mp-cell>
+    <mp-cell value="创建时间" footer="{{process.created_time}}"></mp-cell>
+    <mp-cell value="创建者" footer="{{process.creator}}"></mp-cell>
+  </mp-cells>
+  <mp-cells title="审核内容">
+    <mp-cell wx:for="{{process.info}}" wx:key="index" value="{{item.key}}" footer="{{item.value}}"></mp-cell>
+  </mp-cells>
+  <mp-cells title="状态">
+    <mp-cell wx:if="{{process.status === 0}}" value="{{statusMap[process.status]}}"></mp-cell>
+    <mp-cell wx:if="{{process.status === 1}}" value="{{statusMap[process.status]}}" class="p-success"></mp-cell>
+    <mp-cell wx:if="{{process.status === 2}}" value="{{statusMap[process.status]}}" class="p-danger"></mp-cell>
+    <mp-cell wx:if="{{process.status === 3}}" value="{{statusMap[process.status]}}" class="p-warning"></mp-cell>
+  </mp-cells>
+  <view wx:if="{{process.status === 0}}" class="button-sp-area">
+    <button id="{{process.process_id}}" type="primary" size="default" bindtap="passAntProcess">
+      通 过
+    </button>
+    <button id="{{process.process_id}}" type="warn" size="default" bindtap="rejectAntProcess">
+      驳 回
+    </button>
+  </view>
+  <view class="p-footer">
+    <view class="weui-footer__text">Copyright © 2019-2021 PaaS</view>
+  </view>
+</view>

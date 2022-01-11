@@ -1,0 +1,22 @@
+/* miniprogram/pages/done/done.wxss */
+
+.p-list-icon {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.p-list-title {
+  font-size: 14px;
+}
+
+.p-list-title__sub {
+  color: #8f8f8f;
+  font-size: 12px;
+}
+
+.p-list-footer {
+  font-size: 14px;
+}
