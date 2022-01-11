@@ -1,0 +1,14 @@
+<!--miniprogram/pages/done/done.wxml-->
+<view>
+  <mp-loading type="circle" show="{{!ready}}"></mp-loading>
+  <mp-cells title="已处理流程（暂时最多显示50条）" wx:if="{{ready}}">
+    <mp-cell wx:for="{{doneProcesses}}" wx:key="process_id" link url="../detail/detail?process_id={{item.process_id}}">
+      <image slot="icon" src="/images/ant-flow.png" class="p-list-icon"></image>
+      <view class="p-list-title">
+        <view>{{item.title}}</view>
+        <view class="p-list-title__sub">{{item.created_time}}</view>
+      </view>
+      <view slot="footer" class="p-list-footer">{{item.app}}</view>
+    </mp-cell>
+  </mp-cells>
+</view>

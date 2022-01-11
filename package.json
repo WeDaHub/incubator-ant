@@ -1,0 +1,26 @@
+{
+  "name": "ant",
+  "version": "1.0.0",
+  "description": "paas ant",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@tencent/eslint-config-tencent": "^0.13.0",
+    "eslint": "^7.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js --fix ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.woa.com:jiechaowu/ant.git"
+  },
+  "keywords": [
+    "paas",
+    "ant",
+    "flow"
+  ],
+  "author": "jiechaowu@tencent.com",
+  "license": "MIT"
+}
