@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "paas ant",
   "main": "app.js",
-  "dependencies": {},
   "devDependencies": {
-    "@tencent/eslint-config-tencent": "^0.13.0",
     "eslint": "^7.26.0"
   },
   "scripts": {
