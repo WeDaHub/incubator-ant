@@ -12,13 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.woa.com:jiechaowu/ant.git"
+    "url": "git@github.com:WeDaHub/incubator-ant.git"
   },
   "keywords": [
-    "paas",
     "ant",
     "flow"
   ],
-  "author": "jiechaowu@tencent.com",
-  "license": "MIT"
+  "author": "",
+  "license": "Apache2.0"
 }
